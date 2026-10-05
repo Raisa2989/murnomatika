@@ -1,0 +1,26 @@
+{
+  "name": "Мурноматика — тренажёр с котами",
+  "short_name": "Мурноматика",
+  "description": "Сложение, вычитание, умножение и деление с котами Барсиком, Снежком и Рыжиком",
+  "lang": "ru",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#F4EBDA",
+  "theme_color": "#FF5233",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}
