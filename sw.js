@@ -6,12 +6,12 @@
    версию кэша (v2 → v3 → v4…), иначе у установивших
    PWA пользователей останется старая версия. */
 
-const CACHE_NAME = 'murnomatika-v2';
+const CACHE_NAME = 'murnomatika-v3';
 const APP_SHELL = [
-  '/',
-  '/index.html',
-  '/manifest.json',
-  '/icon.svg'
+  './',
+  './index.html',
+  './manifest.json',
+  './icon.svg'
 ];
 
 /* Установка: кэшируем оболочку приложения */
@@ -63,7 +63,7 @@ self.addEventListener('fetch', (event) => {
   if (event.request.mode === 'navigate') {
     event.respondWith(
       fetch(event.request).catch(() =>
-        caches.match('/index.html').then(r => r || caches.match('/'))
+        caches.match('./index.html').then(r => r || caches.match('./'))
       )
     );
     return;
