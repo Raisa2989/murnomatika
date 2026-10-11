@@ -6,12 +6,13 @@
    версию кэша (v2 → v3 → v4…), иначе у установивших
    PWA пользователей останется старая версия. */
 
-const CACHE_NAME = 'murnomatika-v3';
+const CACHE_NAME = 'murnomatika-v4';
 const APP_SHELL = [
   './',
   './index.html',
   './manifest.json',
-  './icon.svg'
+  './icon.svg',
+  './apple-touch-icon.png'
 ];
 
 /* Установка: кэшируем оболочку приложения */
